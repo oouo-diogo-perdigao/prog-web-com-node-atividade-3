@@ -1,0 +1,30 @@
+<h1>Product</h1>
+<a href="http://localhost:3000/">
+	<input type="button" value="Voltar a lista">
+</a>
+
+<ul>
+    {{#each products}}
+        <li>
+            <p><b>{{this.name}}</b>: {{this.description}}</p>
+            <p><b>Price</b>: ${{this.price}}</p>
+        </li>
+    {{/each}}
+</ul>
+
+
+<form method="post">
+	Autor		<input type="text" name="commentAuthor">
+	Comentario 	<input type="text" name="commentPost">
+				<input type="hidden" name="commentId" value="{{products.id}}">
+				<input type="submit" value="Adicionar Comentario">
+</form>
+<br/>
+<br/>
+Tabla para comentarios
+<dl>
+	{{#each comments}}
+		<dt>{{this.author}}</dt>
+		<dd>{{this.comment}}</dd>
+	{{/each}}
+</dl>

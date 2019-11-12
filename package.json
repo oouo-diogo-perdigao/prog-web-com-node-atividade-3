@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-knex",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon --inspect=0.0.0.0:9229 ./bin/www",
+    "knex": "./node_modules/.bin/knex"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "useTabs": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "jsxBracketSameLine": true,
+    "endOfLine": "lf"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "knex": "^0.16.5",
+    "mongoose": "^5.5.8",
+    "morgan": "~1.9.1",
+    "sqlite3": "^4.0.8"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2"
+  }
+}
